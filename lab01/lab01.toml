@@ -1,0 +1,6 @@
+# empty - no makefile for lab01
+[[tests]]
+name = "empty"
+input = ["empty"]
+expected = "empty"
+rubric = 0
