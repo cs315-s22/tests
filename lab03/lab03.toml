@@ -1,0 +1,71 @@
+[[tests]]
+name = "fib_rec-1"
+input = ["./fib_rec", "1"]
+expected = """
+C: 1
+Asm: 1
+"""
+rubric = 1
+
+[[tests]]
+name = "fib_rec-10"
+input = ["./fib_rec", "10"]
+expected = """
+C: 55
+Asm: 55
+"""
+rubric = 1
+
+[[tests]]
+name = "sumarr_rec1-5"
+input = ["./sumarr_rec", "1", "2", "3", "4", "5"]
+expected = """
+C: 15
+Asm: 15
+"""
+rubric = 1
+
+[[tests]]
+name = "sumarr_rec1"
+input = ["./sumarr_rec", "1"]
+expected = """
+C: 1
+Asm: 1
+"""
+rubric = 1
+
+[[tests]]
+name = "is_pal-abba"
+input = ["./is_pal_rec", "abba"]
+expected = """
+C: True
+Asm: True
+"""
+rubric = 1
+
+[[tests]]
+name = "is_pal-aba"
+input = ["./is_pal_rec", "aba"]
+expected = """
+C: True
+Asm: True
+"""
+rubric = 1
+
+[[tests]]
+name = "is_pal-cs315cs"
+input = ["./is_pal_rec", "cs315cs"]
+expected = """
+C: False
+Asm: False
+"""
+rubric = 1
+
+[[tests]]
+name = "is_pal-cs315cs"
+input = ["./is_pal_rec", "x"]
+expected = """
+C: True
+Asm: True
+"""
+rubric = 1
