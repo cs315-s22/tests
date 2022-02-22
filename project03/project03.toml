@@ -1,0 +1,63 @@
+[[tests]]
+name = "get_bitseq_1"
+input = ["./get_bitseq", "94116", "12", "15"]
+expected = """
+C: 6
+Asm: 6
+"""
+rubric = 10
+
+[[tests]]
+name = "get_bitseq_2"
+input = ["./get_bitseq", "94117", "4", "7"]
+expected = """
+C: 10
+Asm: 10
+"""
+rubric = 10
+
+[[tests]]
+name = "get_bitseq_signed_1"
+input = ["./get_bitseq_signed", "94117", "12", "15"]
+expected = """
+C: 6
+Asm: 6
+"""
+rubric = 10
+
+[[tests]]
+name = "get_bitseq_signed_2"
+input = ["./get_bitseq_signed", "94117", "4", "7"]
+expected = """
+C: -6
+Asm: -6
+"""
+rubric = 10
+
+[[tests]]
+name = "merge_1"
+input = ["./merge", "2", "1", "1"]
+expected = """
+C: 1 1
+Asm: 1 1
+"""
+rubric = 10
+
+[[tests]]
+name = "merge_2"
+input = ["./merge", "6", "1", "3", "5", "2", "4", "6"]
+expected = """
+C: 1 2 3 4 5 6
+Asm: 1 2 3 4 5 6
+"""
+rubric = 15
+
+[[tests]]
+name = "merge_sort_1"
+input = ["./merge_sort", "6", "6", "4", "1", "2", "5", "3"]
+expected = """
+C: 1 2 3 4 5 6
+Asm: 1 2 3 4 5 6
+"""
+rubric = 15
+
