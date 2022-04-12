@@ -1,0 +1,53 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+[[tests]]
+name = "add-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/add-imm-test.dig"]
+expected = """
+add-imm-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "mov-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mov-imm-test.dig"]
+expected = """
+mov-imm-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "sub-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/sub-imm-test.dig"]
+expected = """
+sub-imm-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "cumulative"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/cumulative-test.dig"]
+expected = """
+cumulative-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "alu-z"
+input = ["java", "-cp", "$digital", "CLI", "test", "alu.dig", "-tests", "$project_tests/alu-z-test.dig"]
+expected = """
+alu-z-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "alu-n"
+input = ["java", "-cp", "$digital", "CLI", "test", "alu.dig", "-tests", "$project_tests/alu-n-test.dig"]
+expected = """
+alu-n-test: passed
+"""
+rubric = 1
