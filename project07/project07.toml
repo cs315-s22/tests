@@ -1,0 +1,63 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+# Commenting these out since students won't use them but I used them to validate the circuit
+
+# [[tests]]
+# name = "00-dp-3nop"
+# input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/00-dp-3nop-test.dig"]
+# expected = """
+# 00-dp-3nop-test: passed
+# """
+# rubric = 1
+# 
+# [[tests]]
+# name = "01-dp-2nop"
+# input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/01-dp-2nop-test.dig"]
+# expected = """
+# 01-dp-2nop-test: passed
+# """
+# rubric = 1
+# 
+# [[tests]]
+# name = "02-blbx"
+# input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/02-blbx-test.dig"]
+# expected = """
+# 02-blbx-test: passed
+# """
+# rubric = 1
+# 
+# [[tests]]
+# name = "03-ldr"
+# input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/03-ldr-test.dig"]
+# expected = """
+# 03-ldr-test: passed
+# """
+# rubric = 1
+
+[[tests]]
+name = "04-dp-fwd"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/04-dp-fwd-test.dig"]
+expected = """
+04-dp-fwd-test: passed
+"""
+rubric = 80
+
+[[tests]]
+name = "05-ldr-stl"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/05-ldr-stl-test.dig"]
+expected = """
+05-ldr-stl-test: passed
+"""
+rubric = 10
+
+[[tests]]
+name = "06-blbx-fls"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/06-blbx-fls-test.dig"]
+expected = """
+06-blbx-fls-test: passed
+"""
+rubric = 10
